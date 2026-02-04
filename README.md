@@ -1,12 +1,30 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8306856.svg)](https://doi.org/10.5281/zenodo.8306856)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8306855.svg)](https://doi.org/10.5281/zenodo.8306855)
 
 # Mapping environmental injustices within the U.S. prison system
 
-This is the working repository for a NASA ROSES-21 A.49 Earth Science Applications: Equity and Environmental Justice funded project (Award No 80NSSC22K1465) titled "Leveraging Earth science data to heighten awareness of environmental injustices within the U.S. prison system".
+This is the working repository for NASA-funded research mapping environmental injustices within the U.S. prison system. The project is currently in Phase 2, building on the initial Phase 1 analysis (see Project Versions below).
 
-This repository hosts the workflow used to carry out the spatial analysis, from data retrieval to producing the final dataset that is hosted (here). Below are further details on the repository structure, how to use the code base, and data sources.
+This repository hosts the workflow used to carry out the spatial analysis, from data retrieval to producing the final dataset that is hosted (here)[https://doi.org/10.5281/zenodo.8306892]. Below are further details on the repository structure, how to use the code base, and data sources.
 
 Forward any questions reguarding this project and code base to Caitlin Mothes ([ccmothes\@colostate.edu](mailto:ccmothes@colostate.edu))
+
+<br/>
+
+## Project Versions
+
+This repository contains analyses from two phases of NASA-funded research:
+
+**Phase 1 (v2023-1)** - NASA ROSES-21 A.49 (Award No 80NSSC22K1465)
+- Published: August 31, 2023
+- DOI: [10.5281/zenodo.8306856](https://doi.org/10.5281/zenodo.8306856)
+- Status: Initial environmental justice analysis for U.S. state and federal prisons
+- Archived code: [GitHub Release v2023-1](https://github.com/GeospatialCentroid/NASA-prison-EJ/tree/v2023-1)
+
+**Phase 2 (in progress)** - NASA [insert program & award number]
+- Updated datasets and extended analyses
+- *Release and DOI forthcoming*
+
+**Citation:** For the overall project, use the concept DOI: [10.5281/zenodo.8306856](https://doi.org/10.5281/zenodo.8306856). For specific versions, cite the version-specific DOI listed above.
 
 <br/>
 
