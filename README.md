@@ -1,8 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8306855.svg)](https://doi.org/10.5281/zenodo.8306855)
 
@@ -47,27 +42,26 @@ specific versions, cite the version-specific DOI listed above.
 
 ## File Organization
 
+```
 NASA-prison-EJ/
 ├── README.md
 ├── setup.R
 ├── LICENSE
 ├── .gitignore
 ├── NASA-prison-EJ.Rproj
-├── process_indicators.R          
-├── process_indicators.Rmd        
-├── process_components.Rmd       
-│
-├── R/                            
-├── python/                       
-├── process_data/                 
-├── analysis/                     
-├── figures/                     
-├── outputs/                     
-├── jobs/                        
-├── docs/                         
-├── working_scripts/             
-│
-├── phase1/                       # ARCHIVED - Phase 1 complete
+├── process_indicators.R
+├── process_indicators.Rmd
+├── process_components.Rmd
+├── R/
+├── python/
+├── process_data/
+├── analysis/
+├── figures/
+├── outputs/
+├── jobs/
+├── doc/
+├── working_scripts/
+├── phase1/                    (ARCHIVED - Phase 1 complete)
 │   ├── R/
 │   ├── python/
 │   ├── process_data/
@@ -75,19 +69,19 @@ NASA-prison-EJ/
 │   ├── figures/
 │   ├── outputs/
 │   ├── jobs/
-│   ├── docs/
+│   ├── doc/
 │   ├── process_indicators.R
 │   ├── process_indicators.Rmd
 │   ├── process_components.Rmd
-│   └── README.md                 
-│
-└── data/                         # Local only (not in git)
+│   └── README.md
+└── data/                      (Local only - not in git)
     ├── phase1/
     │   ├── raw/
     │   └── processed/
     └── phase2/
         ├── raw/
         └── processed/
+```
 
 
 ## Folder Descriptions
