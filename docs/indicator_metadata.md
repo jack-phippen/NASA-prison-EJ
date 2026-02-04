@@ -3,16 +3,17 @@ Indicator Metatdata
 
 <table style="width:99%;">
 <colgroup>
-<col style="width: 7%" />
-<col style="width: 40%" />
+<col style="width: 8%" />
+<col style="width: 30%" />
 <col style="width: 5%" />
 <col style="width: 6%" />
-<col style="width: 28%" />
-<col style="width: 4%" />
+<col style="width: 31%" />
 <col style="width: 5%" />
+<col style="width: 6%" />
+<col style="width: 3%" />
 </colgroup>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Indicator</td>
 <td>Dataset used</td>
 <td>Function / file name</td>
@@ -20,20 +21,22 @@ Indicator Metatdata
 <td>Indicator Description</td>
 <td>Time frame / last updated</td>
 <td>Spatial resolution (if raster)</td>
+<td>Phase 2 Updated</td>
 </tr>
-<tr class="even">
-<td>Heat exposure</td>
+<tr>
+<td>Heat index</td>
 <td><a
 href="https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD11A1#description">MODIS
 daily land surface temperature</a></td>
 <td>python/calc_myd11_lst_day.py</td>
 <td>procces_data/process_lst.R</td>
 <td>Mean daily LST for summer months (June-August) from the last 10
-years (2013-2023) averaged within prison boundaries.</td>
-<td>2013 - 2023</td>
+years (2012-2022) averaged within prison boundaries.</td>
+<td>2012 - 2022</td>
 <td>1 km</td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Canopy cover</td>
 <td><a
 href="https://developers.google.com/earth-engine/datasets/catalog/USGS_NLCD_RELEASES_2016_REL">USGS
@@ -44,20 +47,22 @@ National Land Cover Database</a></td>
 buffer.</td>
 <td>2016</td>
 <td>30 m</td>
+<td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Wildfire risk</td>
 <td><a
-href="https://www.fs.usda.gov/rds/archive/catalog/RDS-2015-0047-3">Wildfire
+href="https://www.fs.usda.gov/rds/archive/catalog/RDS-2015-0047-4">Wildfire
 Hazard Potential for the United States</a></td>
 <td>calc_wildfire_risk.R</td>
 <td></td>
 <td>Mean wildfire hazard potential within prison boundary + 1km
 buffer</td>
-<td>2020</td>
+<td>2024</td>
 <td>270 m</td>
+<td>Yes</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Flood risk</td>
 <td><a
 href="https://www.fema.gov/flood-maps/national-flood-hazard-layer">FEMA
@@ -69,8 +74,9 @@ high risk flood zone (Zones A and Z; at least a one percent chance of
 flooding annually)</td>
 <td>August 2021</td>
 <td></td>
+<td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Ozone</td>
 <td><a
 href="https://sedac.ciesin.columbia.edu/data/set/aqdh-o3-concentrations-contiguous-us-1-km-2000-2016">SEDAC
@@ -81,8 +87,9 @@ Annual O3 Concentrations for CONUS</a></td>
 boundaries + 1km buffer</td>
 <td>2015-2016</td>
 <td>1 km</td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>PM 2.5</td>
 <td><a
 href="https://sedac.ciesin.columbia.edu/data/set/aqdh-pm2-5-concentrations-contiguous-us-1-km-2000-2016">SEDAC
@@ -93,8 +100,9 @@ Annual PM2.5 Concentrations for CONUS</a></td>
 boundaries + 1km buffer</td>
 <td>2015-2016</td>
 <td>1 km</td>
+<td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Traffic volume and proximity</td>
 <td><a
 href="https://www.fhwa.dot.gov/policyinformation/hpms/shapefiles.cfm">FHA’s
@@ -105,8 +113,9 @@ Annual Average Daily Traffic</a></td>
 within 500 meters, divided by distance in meters</td>
 <td>2018</td>
 <td></td>
+<td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Pesticide use</td>
 <td><a
 href="https://sedac.ciesin.columbia.edu/data/set/ferman-v1-pest-chemgrids-v1-01">SEDAC
@@ -117,8 +126,9 @@ Global Pesticide Grids</a></td>
 prison boundaries + 1km buffer.</td>
 <td>2015</td>
 <td>~ 10 km (5 arc-minute)</td>
+<td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Superfund/NPL proximity</td>
 <td><a
 href="https://cumulis.epa.gov/supercpad/CurSites/srchsites.cfm">EPA</a>
@@ -128,14 +138,15 @@ file’)</td>
 <td>process_data/process_npl.R</td>
 <td>Count of proposed and listed NPL facilities within 5km (or nearest
 one beyond 5km) each divided by the distance in km</td>
-<td>October 2022</td>
+<td>February 2026</td>
 <td></td>
+<td>Yes</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Risk Management Plan facility proximity</td>
 <td><a
-href="https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::epa-emergency-response-er-risk-management-plan-rmp-facilities/explore?location=29.842034%2C-113.806709%2C3.92">HIFLD
-EPA ER Risk Management Plan Facilities</a></td>
+href="https://www.data-liberation-project.org/datasets/epa-risk-management-program-database/">The
+Data Liberation Project - EPA Risk Management Program Database</a></td>
 <td>calc_rmp_proximity.R</td>
 <td></td>
 <td><p>Count of Risk Management Plan (potential chemical accident
@@ -144,10 +155,11 @@ divided by the distance in km.</p>
 <p>Modeled after EJ Screen methods (pg. 21): <a
 href="https://www.epa.gov/sites/default/files/2021-04/documents/ejscreen_technical_document.pdf"
 class="uri">https://www.epa.gov/sites/default/files/2021-04/documents/ejscreen_technical_document.pdf</a></p></td>
-<td>May 2023</td>
+<td>january 2026</td>
 <td></td>
+<td>Yes</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Hazardous waste facility proximity</td>
 <td><a
 href="https://www.epa.gov/frs/geospatial-data-download-service">EPA FRS
@@ -157,8 +169,9 @@ single CSV file)</td>
 <td>process_data/process_haz_waste/R</td>
 <td>Count of hazardous waste facilities within 5km of prison boundary
 (or nearest beyond 5km) each divided by distance in km</td>
-<td>March 2023</td>
+<td>January 2025</td>
 <td></td>
+<td>Yes</td>
 </tr>
 </tbody>
 </table>
